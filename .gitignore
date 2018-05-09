@@ -9,6 +9,8 @@
 # production
 /build
 
+#favicon icons
+favicon.ico
 # misc
 .DS_Store
 .env.local
