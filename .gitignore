@@ -9,6 +9,10 @@
 # production
 /build
 
+
+# thumbs files
+Thumbs.db
+
 #favicon icons
 public/favicon.ico
 # misc
