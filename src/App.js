@@ -21,7 +21,8 @@ class App extends Component {
       input: "",
       imageUrl:'',
        box:{},
-       route: 'signin'
+       route: 'signin',
+       isSignedIn:false
     }
   }
 
@@ -57,6 +58,11 @@ displayFaceBox = (box) =>{
   }
 
   onRouteChange = (route) =>{
+    if(route==='signout'){
+      this.setState({isSignedIn:false});
+    }else if(route==='home'){
+      this.setState({isSignedIn:true});
+    }
     this.setState({route:route});
   }
   render() {
